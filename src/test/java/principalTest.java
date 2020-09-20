@@ -17,7 +17,7 @@ class principalTest {
     principal.main(null);
 
     // assertion
-    assertEquals("Hola mundo!\n", bos.toString());
+    assertEquals("Hola mundo!", bos.toString().replace("\n", ""));
 
     // undo the binding in System
     System.setOut(originalOut);
